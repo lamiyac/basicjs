@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <title>Document</title>
+    <script src="basic4.js"></script>
+</head>
+<body>
+    <section class="bg-light mx-auto text-center pt-5 pb-5  " id="quad">
+       <br>
+       <br>
+       <br><br><br><br>
+        <h1><b>Quadratic equations!!</b></h1>
+        <br>
+    <label><h3>a:</h3></label>
+     <input type="text " class="p-2" id="id1"> 
+     <label><h3>b:</h3></label>
+     <input type="text " class="p-2" id="id2">
+     <label><h3>c:</h3></label>
+     <input type="text " class="p-2" id="id3">
+     <label id="result">...</label>
+     <button class="btn btn-info text-warning p-4" type="submit" onclick="quadractic()"><b>Check</b></button>
+    
+     <a href=#positive class="bg-dark text-light p-4 ">next</a>
+     <br>
+       <br>
+       <br>
+       <br>
+        <br><br><br><br><br>
+   </section>
+    <section class="bg-info mx-auto text-center pt-5 pb-5  " id="positive" >
+        <br>
+       <br>
+       <br><br><br><br><br>
+        <h1><b>Positive, Negative, or Zero!!</b></h1>
+        <br>
+    <label ><h3>Please enter some numbers:</h3></label>
+     <input type="text " class="p-2" id="id4">
+     <label id="result1"><b>...</b></label>
+     <button class="btn btn-light text-dark p-4" type="submit" onclick="positive()"><b>Check</b></button>
+    
+     <a href=#even class="bg-dark text-light p-4 ">next</a>
+     <br>
+       <br>
+       <br>
+       <br>
+       <br><br><br><br><br>
+
+    </section>
+    <section class="bg-light mx-auto text-center pt-5 pb-5 " id="even">
+        <br>
+       <br>
+       <br><br><br><br><br>
+        <h1><b>Odd or Even!!</b></h1>
+        <br>
+    <label ><h3>Please enter some numbers:</h3></label>
+     <input type="text " class="p-2" id="id5">
+     <label id="result2"><b>...</b></label>
+     <button class="btn btn-info text-warning p-4" type="submit" onclick="oddeven()"><b>Check</b></button>
+     <a href=#number class="bg-dark text-light p-4 ">next</a>
+     
+     <br>
+       <br>
+       <br>
+       <br>
+       <br><br><br><br><br>
+        
+   </section>
+    <section class="bg-info mx-auto text-center pt-5 pb-5 " id="number">
+        <br>
+        <br>
+        <br><br><br><br><br>
+        <h1><b>Largest number!!</b></h1>
+        <br>
+    <label class=""><h3>Please enter some numbers:</h3></label>
+    <label><h3>a:</h3></label>
+    <input type="text " class="p-2" id="id6"> 
+    <label><h3>b:</h3></label>
+    <input type="text " class="p-2" id="id7">
+    <label><h3>c:</h3></label>
+    <input type="text " class="p-2" id="id8">
+    
+     <label id="result3"><b>...</b></label>
+     <button class="btn btn-light text-dark p-4" type="submit" onclick="largest()"><b>Check</b></button>
+      <a href=#number class="bg-dark text-light p-4 ">next</a>
+      <br><br><br><br><br><br><br><br>
+    </section>
+
+    <section class="bg-light mx-auto text-center pt-5 pb-5 " id="number">
+        <br>
+       <br>
+       <br><br><br><br><br>
+        <h1><b>prime or not!!</b></h1>
+        <br>
+    <label ><h3>Please enter some numbers:</h3></label>
+     <input type="text " class="p-2" id="id9">
+     <label id="result4"><b>...</b></label>
+     <button class="btn btn-info text-warning p-4" type="submit" onclick="prime()"><b>Check</b></button>
+     <a href=#allprime class="bg-dark text-light p-4 ">next</a>
+     
+     <br>
+       <br>
+       <br>
+       <br>
+       <br><br><br><br><br>
+</section>
+
+</section>
+<section class="bg-info mx-auto text-center pt-5 pb-5 " id="allprime">
+    <br>
+    <br>
+    <br><br><br><br><br>
+    <h1><b>Print all prime!!</b></h1>
+    <br>
+<label ><h3>Please enter range:</h3></label>
+<label><h3>a:</h3></label>
+<input type="text " class="p-2" id="id10"> 
+<label><h3>b:</h3></label>
+<input type="text " class="p-2" id="id11">
+
+
+ <label id="result5"><b>...</b></label>
+ <button class="btn btn-light text-dark p-4" type="submit" onclick="allprime()"><b>Check</b></button>
+  <a href=#factorial class="bg-dark text-light p-4 ">next</a>
+  <br><br><br><br><br><br><br><br>
+</section>
+<section class="bg-light mx-auto text-center pt-5 pb-5 " id="factorial">
+    <br>
+   <br>
+   <br><br><br><br><br>
+    <h1><b>factorial!!</b></h1>
+    <br>
+<label ><h3>Please enter a number:</h3></label>
+ <input type="text " class="p-2" id="id12">
+ <label id="result6"><b>...</b></label>
+ <button class="btn btn-info text-warning p-4" type="submit" onclick="factorial()"><b>Check</b></button>
+ <a href=#multi class="bg-dark text-light p-4 ">next</a>
+ 
+ <br>
+   <br>
+   <br>
+   <br>
+   <br><br><br><br><br>
+</section>
+
+<section class="bg-info mx-auto text-center pt-5 pb-5 " id="multi">
+    <br>
+    <br>
+    <br><br><br><br><br>
+    <h1><b>Multiplication table!!</b></h1>
+    <br>
+<label class=""><h3>Please enter a number</h3></label>
+<label><h3>a:</h3></label>
+<input type="text " class="p-2" id="id13"> 
+ <label id="result7"><b>...</b></label>
+ <button class="btn btn-light text-dark p-4" type="submit" onclick="multiple()"><b>Check</b></button>
+  <a href=#fib class="bg-dark text-light p-4 ">next</a>
+  <br><br><br><br><br><br><br><br>
+</section>
+
+<section class="bg-light mx-auto text-center pt-5 pb-5 " id="fib">
+    <br>
+   <br>
+   <br><br><br><br><br>
+    <h1><b>fibnocci!!</b></h1>
+    <br>
+<label ><h3>Please enter a number:</h3></label>
+ <input type="text " class="p-2" id="id14">
+ <label id="result8"><b>...</b></label>
+ <button class="btn btn-info text-warning p-4" type="submit" onclick="fibno()"><b>Check</b></button>
+ <a href=#amstrong class="bg-dark text-light p-4 ">next</a>
+ 
+ <br>
+   <br>
+   <br>
+   <br>
+   <br><br><br><br><br>
+</section>
+<section class="bg-info mx-auto text-center pt-5 pb-5 " id="amstrong">
+    <br>
+    <br>
+    <br><br><br><br><br>
+    <h1><b>Amstrong!!</b></h1>
+    <br>
+<label class=""><h3>Please enter a number</h3></label>
+<label><h3>a:</h3></label>
+<input type="text " class="p-2" id="id15"> 
+
+
+ <label id="result9"><b>...</b></label>
+ 
+ <button class="btn btn-light text-dark p-4" type="submit" onclick="amstrong()"><b>Check</b></button>
+  <a href=#amstrongran class="bg-dark text-light p-4 ">next</a>
+  <br><br><br><br><br><br><br><br>
+</section>
+
+
+<section class="bg-light mx-auto text-center pt-5 pb-5 " id="amstrongran">
+    <br>
+   <br>
+   <br><br><br><br><br>
+    <h1><b>Amstrong no in range!!</b></h1>
+    <br>
+<label ><h3>Please enter range:</h3></label>
+ <input type="text " class="p-2" id="id16">
+ <input type="text " class="p-2" id="id17">
+ <label id="result10"><b>...</b></label>
+ <button class="btn btn-info text-warning p-4" type="submit" onclick="amstrongran()"><b>Check</b></button>
+ <a href=#simple class="bg-dark text-light p-4 ">next</a>
+ 
+ <br>
+   <br>
+   <br>
+   <br>
+   <br><br><br><br><br>
+</section>
+
+<section class="bg-info mx-auto text-center pt-5 pb-5 " id="simple">
+    <br>
+    <br>
+    <br><br><br><br><br>
+    <h1><b>Simple calculator!!</b></h1>
+    <br>
+<label class=""><h3>Please enter:</h3></label>
+<label><h3>operator:</h3></label>
+<input type="text " class="p-2" id="id18"> 
+<label><h3>a:</h3></label>
+<input type="number " class="p-2" id="id19">
+
+<label><h3>b:</h3></label>
+ <input type="number " class="p-2" id="id20"> 
+
+ <label id="result11"><b>...</b></label>
+ 
+ <button class="btn btn-light text-dark p-4" type="submit" onclick="simple()"><b>Check</b></button>
+  <a href=#nature class="bg-dark text-light p-4 ">next</a>
+  <br><br><br><br><br><br><br><br>
+</section>
+
+<section class="bg-light mx-auto text-center pt-5 pb-5 " id="nature">
+    <br>
+   <br>
+   <br><br><br><br><br>
+    <h1><b>Natural numbers sum!!</b></h1>
+    <br>
+<label ><h3>Please enter numbers:</h3></label>
+ <input type="text " class="p-2" id="id22">
+ 
+ <label id="result12"><b>...</b></label>
+ <button class="btn btn-info text-warning p-4" type="submit" onclick="sum()"><b>Check</b></button>
+ <a href=#same class="bg-dark text-light p-4 ">next</a>
+ 
+ <br>
+   <br>
+   <br>
+   <br>
+   <br><br><br><br><br>
+</section>
+<section class="bg-info mx-auto text-center pt-5 pb-5 " id="same">
+    <br>
+    <br>
+    <br><br><br><br><br>
+    <h1><b>Same last digit!!</b></h1>
+    <br>
+<label ><h3>Please enter:</h3></label>
+<label><h3>a:</h3></label>
+<input type="text " class="p-2" id="id23"> 
+<label><h3>b:</h3></label>
+<input type="number " class="p-2" id="id24">
+
+<label><h3>c:</h3></label>
+ <input type="number " class="p-2" id="id25"> 
+
+ <label id="result16"><b>...</b></label>
+ 
+ <button class="btn btn-light text-dark p-4" type="submit" onclick="same()"><b>Check</b></button>
+  <a href=#factnum class="bg-dark text-light p-4 ">next</a>
+  <br><br><br><br><br><br><br><br>
+</section>
+<section class="bg-light mx-auto text-center pt-5 pb-5 " id="factnum">
+    <br>
+   <br>
+   <br><br><br><br><br>
+    <h1><b>factors !!</b></h1>
+    <br>
+<label ><h3>Please enter number:</h3></label>
+ <input type="text " class="p-2" id="id26">
+ 
+ <label id="result17"><b>...</b></label>
+ <button class="btn btn-info text-warning p-4" type="submit" onclick="factor()"><b>Check</b></button>
+ <a href=#quad class="bg-dark text-light p-4 ">next</a>
+ 
+ <br>
+   <br>
+   <br>
+   <br>
+   <br><br><br><br><br>
+</section>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
