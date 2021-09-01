@@ -9,7 +9,8 @@ function phonenumber(inputtxt)
 	 }
    else
      {
-	   alert("Not a valid Phone Number");
+      document.getElementById("result111").innerHTML=`Not a valid Phone Number`;
+      
 	   return false;
      }
 }
@@ -18,34 +19,34 @@ function password(inputtxt)
   var passw= /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
 if(inputtxt.value.match(passw)) 
 { 
-alert('Correct, try another...')
-return true;
-}
-else
-{ 
-alert('Wrong...!')
-return false;
+  let stro=new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
+  let med=new RegExp("^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})");
+  if(stro.test(passw)){
+      document.getElementById("result44").style.color="green";
+      document.getElementById("result44").innerHTML="strong password;"
+  }
+  else if(med.test(passw)){
+    document.getElementById("result44").style.color="yellow";
+    document.getElementById("result44").innerHTML="medium password;"
+  }else{
+    document.getElementById("result44").style.color="red"
+    document.getElementById("result44").innerHTML="weak password;"
+  }
 }}
-$scope.analyze=function passwordstr(inputtxt) {
-var med=/^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})$/;
-var strong=/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})$/;
 
-    if(inputtxt.value.match(strong)) {
-        $scope.passwordstr["background-color"] = "green";
-    } else if(inputtxt.value.match(med)) {
-     $scope.passwordStrength["background-color"] = "orange";
-    } else {
-        $scope.passwordstr["background-color"] = "red";
-    }
-}
+
 
 function ValidateEmail(inputtext) 
 {
     var ema=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
  if (inputtext.value.match(ema))
   {
+    document.getElementById("result334").innerHTML=`You have entered an valid email address!`;
     return true;
   }
-    alert("You have entered an invalid email address!")
+  document.getElementById("result334").innerHTML=`You have entered an invalid email address!`;
     return false;
 }
+
+
+
